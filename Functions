@@ -1,0 +1,24 @@
+//Function Declaration 
+
+function multiplyByTwo (n) {
+  let number=2*n;
+  return number; 
+}; 
+
+/*
+//Arrow function 
+
+const multiplyByTwo= (n) => {
+         let number= 2*(n); 
+  return number; 
+}; 
+
+// Refactoring Arrow Function 
+const multiplyByTwo = n =>{
+  let number=2*n;
+  return number; 
+}; 
+*/
+
+//Calling the function 
+console.log(multiplyByTwo(8)); 
