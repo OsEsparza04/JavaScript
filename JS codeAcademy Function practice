@@ -1,0 +1,29 @@
+let orderCount = 0; 
+const takeOrder=(topping, crusType)=> {
+  orderCount++; 
+  console.log("Order: " + crusType +  " pizza topped with " + topping);
+  
+};
+
+ const getSubTotal=(itemCount)=> {
+     let item = itemCount*7.5; 
+   return item;
+   
+ };
+
+
+const getTax=(orderCount)=> {
+     const tax= getSubTotal(2)*0.06;
+  return tax; 
+   
+ };
+
+const getTotal=()=> {
+     return getSubTotal(orderCount) + getTax(orderCount);  
+};
+
+
+takeOrder("Mushrooms", "Thin");
+takeOrder("Mushrooms", "Thin"); 
+console.log(getSubTotal(2));
+console.log(getTotal());
