@@ -1,0 +1,29 @@
+//Function Declaration: area of square; 
+
+function areaOfSquare(x,y) {
+      let area=x*y; 
+  return area; 
+}; 
+
+//Calling the function and logging it in the console. 
+console.log(areaOfSquare(8,9)); 
+
+//Velocity function  
+ // a: final position; b: initial position; t:time. 
+
+ /*function velocity(a,b,t) {
+     let vel=(a-b)/t;
+   return vel;
+ }
+
+ console.log(velocity(1000,0,80)); */ 
+
+
+//Velocity arrow function  
+ // a: final position; b: initial position; t:time. 
+const velocity= (a,b,t) => {
+   let vel=(a-b)/t;
+   return vel;
+}; 
+
+ console.log(velocity(1000,0,80));  
