@@ -1,0 +1,19 @@
+/*Nested functions*/
+
+// Declare the function addSquares with two parameters a & b
+
+function addSquares(a,b){
+  // Declarea nested function square with one parameter n
+  function square(n){
+    // returns n time n
+    return n*n; 
+   
+  }
+    //returns the square of plus the square of b
+   return square(a)+square(b); 
+}
+
+// outputs
+console.log(addSquares(4,6)); // 52
+console.log(addSquares(1,2)); // 5
+console.log(addSquares(4,2)); // 20 
