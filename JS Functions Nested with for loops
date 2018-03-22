@@ -1,0 +1,21 @@
+ //I declare a function named myPing with no parameter. That will log the message Ping when I call the function. 
+const myPing=function(){
+  console.log('Ping'); 
+}
+
+ myPing(); 
+
+
+// I declare a function called power with two parameters: base and exponent
+const power= function (base,exponent){
+  //variable declare result
+   let result=1; 
+  //iteration 
+  for (let i=0; i<exponent; i++){
+     result=result*base;
+  }
+   
+   return result;
+}
+
+console.log(power(2,5)); 
