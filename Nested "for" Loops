@@ -1,0 +1,21 @@
+/* Program that iterates over two string arrays and matches same values between two of them */ 
+
+// Declaring 1st string Array 
+let myPlaces = ['Cambodia', 'Taiwan', 'Thailand','Japan'];
+
+// Declaring 2nd string Array  
+let friendPlaces = ['Taiwan', 'Japan', 'South Korea'];
+
+// for loop that iterate over the 1st array
+for(let myPlacesIndex=0; myPlacesIndex< myPlaces.length;myPlacesIndex++){
+   //console.log(myPlaces[myPlacesIndex]); 
+  /* nested for loop that iterates over the 2nd array  */ 
+ for(let friendPlacesIndex=0; friendPlacesIndex < friendPlaces.length;friendPlacesIndex++ ){
+  /* declaration of an if statement that compares between the two arrays  */  if(myPlaces[myPlacesIndex]===friendPlaces[friendPlacesIndex]){
+         console.log('Match: ' + myPlaces[myPlacesIndex]); 
+       }
+   
+    
+  }
+  
+} 
