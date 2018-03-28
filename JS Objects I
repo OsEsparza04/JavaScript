@@ -1,0 +1,35 @@
+let day='Tuesday';
+let alarm;
+
+let person={
+  name:'Oscar',
+  age:?,
+  weekendAlarm:'No alarms needed',
+  weekAlarm:'Alarm set to 7am',
+  sayHello(){
+    return `Hello, my name is ${this.name}` 
+  },
+  sayGoodBye(){
+  return 'See you later!'; 
+},
+  
+}
+person['Hobbies']=['Chess, Reading, Cooking, Coding']; 
+
+person.hobbies=['Coding']; 
+
+if(day==='Saturday' || day==='Sunday'){
+  alarm='weekendAlarm';
+} else {
+  alarm='weekAlarm'; 
+}
+
+//console.log(person.name);
+//console.log(person.age); 
+
+console.log(person['name']);
+console.log(person['age']);
+console.log(person[alarm]); 
+console.log(person.hobbies); 
+console.log(person.sayHello()); 
+console.log(person.sayGoodBye()); 
