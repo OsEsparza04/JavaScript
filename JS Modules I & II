@@ -1,0 +1,43 @@
+********** STARTS MODULE I
+
+1-airplane.js
+// creat an Object called Airplane
+let Airplane= {};
+// add property named myAirplane and set it to StarJet
+ Airplane.myAirplane="StarJet"; 
+ // export module 
+module.exports=Airplane;  
+
+1-missionControl.js
+ // use the require function to import the Airplane module from 1-airplane.js
+const Airplane= require('./1-airplane.js');
+// define a function that displays the name of airplane
+function displayAirplane(){
+  console.log( Airplane.myAirplane); 
+}
+
+displayAirplane();
+**************************** ENDS MODULE I
+**************************** STARTS MODULE II 
+
+2-airplane.js
+// creat an Object called Airplane
+let Airplane={}; 
+
+// export module and set properties for the object myAirplane
+module.exports={
+  myAirplane:"CloudJet",
+  // define a function that displays the name of airplane
+  displayAirplane: function(){
+  return this.myAirplane;
+}
+  
+}; 
+ 
+ 
+ 2-missionControl.js
+ // use the require function to import the Airplane module from 2-airplane.js
+ const Airplane= require('./2-airplane.js');
+// log the object displayAirplane
+console.log(Airplane.displayAirplane()); 
+**************************** ENDS MODULE II
